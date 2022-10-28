@@ -8,19 +8,15 @@
      <title>counter</title>
 </head>
 <body>
-    <h1>People entered:</h1>
-    <h2 id="count-el">0</h2>
-    <div>
-        <button id="inc-btn" onclick="increment()">
-            button
-        </button>
-        <button id="save-btn" onclick="save()">
-            save
-        </button>
-        <p id="save-el">
-            Previous entries:
-        </p>
-    </div>
+    <span id="num1-el"></span>
+    <span id="num2-el"></span>
+    <br>
+    <button id="add" onclick="addition()">ADD</button>
+    <button id="subtract" onclick="minus()">MINUS</button>
+    <button id="multiply" onclick="times()">TIMES</button>
+    <button id="divide" onclick="division()">DIVIDE</button>
+    <br>
+    <span id="sum-el">ANSWER:</span>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

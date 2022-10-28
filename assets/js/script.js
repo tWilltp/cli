@@ -1,19 +1,36 @@
-let countEl = document.getElementById('count-el')
-let count = 0
-let saveEl = document.getElementById('save-el')
+let add = document.getElementById('add')
+let subtract = document.getElementById('subtract')
+let multiply = document.getElementById('multiply')
+let divide = document.getElementById('divide')
+let sumEl = document.getElementById('sum-el')
 
-function increment() {
-    count += 1
-    countEl.innerText = count
+let num1 = 7
+let num2 = 8
+
+document.getElementById('num1-el').textContent = num1
+document.getElementById('num2-el').textContent = num2
+ 
+function addition() {
+    let result = num1 + num2
+    sumEl.textContent = "answer = " + result
 }
 
-function save () {
-    let saved = count + " - "
-    saveEl.textContent += saved
-    count = 0
-    countEl.innerText = 0
+function minus() {
+    let result = num1 - num2
+    sumEl.textContent = "answer = " + result
 }
 
-save()
+function times() {
+    let result = num1 * num2
+    sumEl.textContent = "answer = " + result
+}
 
+function division() {
+    let result = num1 / num2
+    sumEl.textContent = "answer = " + result
+}
 
+addition()
+minus()
+times()
+division()
