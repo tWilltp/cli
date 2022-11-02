@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="404" href="404.html">
+     <title>counter</title>
+</head>
+<body>
+     <h1>Blackjack</h1>
+     <br>
+     <p id="message-el">Dealer:</p>
+     <br>
+     <p id="cards-el">Cards:</p>
+     <br>
+     <p id="sum-el">Sum:</p>
+     <br>
+     <button id="start-game" onclick="renderGame()">Start game</button>
+     <br>
+     <br>
+     <button id="new-card" onclick="newCard()">New Card?</button>
+     <script src="assets/js/.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/blackjack.css">
+     <link rel="404" href="404.html">
+     <title>counter</title>
+</head>
+<body>
+    <p id="greeting-el"></p>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+for (let i = 10; i < 101; i += 10)
+console.log(i)
+
+let messages = [
+    "hello",
+    "welcome",
+    "goodbye",
+    "same here",
+    "great to hear"
+]
+
+for (let i = 0; i < 5; i += 1) {
+    console.log(messages[4])
+}
+
+let cards = [7, 3, 9]
+
+for (let i = 0; i < cards.length; i++) {
+    console.log(i)
+}
+
+let sentence = ["hello", "my", "name", "is", "will"]
+let greetingEl = document.getElementById("greeting-el")
+
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += sentence[i] + " "
+}

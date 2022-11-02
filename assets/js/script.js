@@ -1,36 +1,83 @@
-let add = document.getElementById('add')
-let subtract = document.getElementById('subtract')
-let multiply = document.getElementById('multiply')
-let divide = document.getElementById('divide')
+/*
+let cards = []
+let sum = 0
+let blackJack = false
+let isAlive = false
+let message = ""
+let messageEl = document.getElementById('message-el')
 let sumEl = document.getElementById('sum-el')
+let cardsEl = document.getElementById('cards-el')
 
-let num1 = 7
-let num2 = 8
-
-document.getElementById('num1-el').textContent = num1
-document.getElementById('num2-el').textContent = num2
- 
-function addition() {
-    let result = num1 + num2
-    sumEl.textContent = "answer = " + result
+let player = {
+    chips: 100,
+    name: "Bill"
 }
 
-function minus() {
-    let result = num1 - num2
-    sumEl.textContent = "answer = " + result
+let playerEl = document.getElementById('player-el')
+playerEl.textContent = player.name + ", " + player.chips
+
+function getRandomCard() {
+
+    let randomNumber = Math.floor(Math.random() * 13) + 1
+    if (randomNumber > 10) {
+        return 10
+    } else if (randomNumber === 1) {
+        return 11
+    } else {
+        return randomNumber
+    }
+
 }
 
-function times() {
-    let result = num1 * num2
-    sumEl.textContent = "answer = " + result
+function startGame() {
+
+    let fCard = getRandomCard()
+    let sCard = getRandomCard()
+    cards = [fCard, sCard]
+    sum = fCard + sCard
+    isAlive = true
+    renderGame()
+    
 }
 
-function division() {
-    let result = num1 / num2
-    sumEl.textContent = "answer = " + result
+function renderGame() {
+
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + ", "
+    }
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "New card?"
+    } else if (sum === 21) {
+        message = "BlackJack!"
+        blackJack = true
+    } else {
+        message = "Bust"
+        isAlive = false
+    }
+    messageEl.textContent = "Dealer: " + message
+
 }
 
-addition()
-minus()
-times()
-division()
+function newCard() {
+
+    if (isAlive === true && blackJack === false) {
+
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+
+    }
+
+}
+*/
+
+let dayOfMonth = 13
+let weekday = "Friday"
+
+
+if (weekday === "Friday" && dayOfMonth === 13) {
+    console.log("spooky")
+}
