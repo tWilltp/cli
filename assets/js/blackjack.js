@@ -1,3 +1,5 @@
+// basic race game returning fastest time, hard coded
+
 let player1Time = 102
 let player2Time = 107
 
@@ -19,7 +21,7 @@ let totalTime = totalRaceTime()
 
 console.log(totalTime)
 
-//math.random
+//math.random with dice game
 
 let randomNumber = Math.random()
 
@@ -29,6 +31,8 @@ function rollDice() {
 }
 
 console.log(rollDice())
+
+// or operator with movie selections
 
 let likesDocumentaries = true
 let likesStartUps = false
@@ -40,6 +44,8 @@ if (likesDocumentaries === true || likesStartUps === true) {
 function recomendMovie() {
     console.log("movie")
 }
+
+// array navigation with course example and airBnB listing
 
 let course = {
     title: "learn css",
@@ -63,6 +69,8 @@ let airBnBCastles = {
 console.log(airBnBCastles.age)
 console.log(airBnBCastles.stoneWalls)
 
+// string concatenation
+
 let person = {
     name: "will",
     age: 22,
@@ -74,6 +82,8 @@ function logData() {
 }
 
 logData()
+
+// conditional statements
 
 let age = 22
 
@@ -91,6 +101,8 @@ if (age < 10) {
 
 console.log(age)
 
+// push pop and shift unushift operators plus array indexing with largest countries
+
 let largestCountries = ["Tuvalu", "india", "USA", "Indonesia", "Monaco"]
 
 largestCountries.pop()
@@ -101,3 +113,24 @@ largestCountries.unshift("China")
 for (i = 0; i < largestCountries.length; i++) {
     console.log("- " + largestCountries[i])
 }
+
+// spooky if statement
+
+let dayOfMonth = 13
+let weekday = "Friday"
+
+
+if (weekday === "Friday" && dayOfMonth === 13) {
+    console.log("spooky")
+}
+
+// rock paper scissors game
+
+let hands = ["rock", "paper", "scissor"]
+
+function RPS() {
+    let random = Math.floor(Math.random() * 3)
+    return hands[random]
+}
+
+console.log(RPS())
