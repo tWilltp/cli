@@ -1,3 +1,5 @@
+<!-- html for blackjack game -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,28 +18,18 @@
      <br>
      <p id="sum-el">Sum:</p>
      <br>
-     <button id="start-game" onclick="renderGame()">Start game</button>
+     <button id="start-game" onclick="startGame()">Start game</button>
      <br>
      <br>
      <button id="new-card" onclick="newCard()">New Card?</button>
-     <script src="assets/js/.js"></script>
+     <br>
+     <br>
+     <p id="player-el"></p>
+     <script src="assets/js/script.js"></script>
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="assets/css/blackjack.css">
-     <link rel="404" href="404.html">
-     <title>counter</title>
-</head>
-<body>
-    <p id="greeting-el"></p>
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+// js example
 
 for (let i = 10; i < 101; i += 10)
 console.log(i)
