@@ -29,6 +29,28 @@
 </body>
 </html>
 
+<!-- html for chrome extension -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="404" href="404.html">
+     <title>counter</title>
+</head>
+<body>
+    <input type="text" id="input-el">
+    <button id="input-btn">SAVE INPUT</button>
+    <ul id="ul-el">
+    </ul>
+    <div id="container">
+
+    </div>
+     <script src="assets/js/script.js"></script>
+</body>
+
 // js example
 
 for (let i = 10; i < 101; i += 10)

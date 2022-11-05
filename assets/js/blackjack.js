@@ -229,3 +229,76 @@ function sortFruit() {
 }
 
 sortFruit()
+
+// add event listeners, html === <div id="box">box</div>
+
+let box = document.getElementById("box")
+
+box.addEventListener("click", function() {
+    console.log("open box")
+})
+
+// example of when to use const vs let (let variables can be reassigned, const variables cannot)
+
+const basePrice = 520
+const discount = 120
+let shippingCost = 12
+let shippingTime = "5-12 days"
+
+shippingCost = 15
+shippingTime = "7-14 days"
+
+let fullPrice = basePrice - discount + shippingCost
+
+console.log("Total cost: " + fullPrice + ". It will arrive in " + shippingTime)
+
+// create elements in js
+
+const li = document.createElement("li")
+li.textContent = myLeads[i]
+ulEl.append(li)
+
+// template literals/strings
+
+const recipient = "James"
+const sender = "Will"
+const email = `Hey ${recipient}! How is it going? Cheers ${sender}`
+console.log(email)
+
+// building chrome extension (unfinished)
+
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+const container = document.getElementById("container")
+
+inputBtn.addEventListener("click", function() {
+    myLeads.push(inputEl.value)
+    inputEl.value = ""
+    renderLeads()
+})
+
+function renderLeads() {
+
+    let listItems = ""
+    for (let i = 0; i < myLeads.length; i++) {
+        listItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'>
+                    ${myLeads[i]}
+                </a>
+            </li>
+        `
+    }
+    ulEl.innerHTML = listItems
+
+}
+
+// buy button function
+
+container.innerHTML = "<button onclick='buy()'>Buy!</button>"
+
+function buy() {
+    container.innerHTML += "<p>Thankyou for buying</p>"
+}
